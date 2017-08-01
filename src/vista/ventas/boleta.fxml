@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="571.0" prefWidth="642.0" style="-fx-background-color: #72F9EB;" stylesheets="@../../css/boleta.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ventas.BoletaController">
+   <children>
+      <HBox prefHeight="75.0" prefWidth="620.0">
+         <children>
+            <Label fx:id="titulo" prefHeight="148.0" prefWidth="207.0" textFill="#720f0f">
+               <font>
+                  <Font name="Arial Narrow" size="39.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="75.0" prefWidth="321.0">
+               <children>
+                  <HBox prefHeight="34.0" prefWidth="196.0" style="-fx-border-radius: 5;" styleClass="cuadro">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="117.0" style="-fx-background-color: #2848B2;" text="DIA">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <Separator prefHeight="15.0" prefWidth="100.0">
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                    </Lighting>
+                                 </effect>
+                              </Separator>
+                              <Label fx:id="dia" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="108.0" text="01">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" style="-fx-background-color: black;" />
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="117.0" style="-fx-background-color: #2848B2;" text="MES">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <Separator prefHeight="15.0" prefWidth="100.0">
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                    </Lighting>
+                                 </effect>
+                              </Separator>
+                              <Label fx:id="mes" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="108.0" text="11">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" style="-fx-background-color: black;" />
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="117.0" style="-fx-background-color: #2848B2;" text="AÑO">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <Separator prefHeight="15.0" prefWidth="100.0">
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                    </Lighting>
+                                 </effect>
+                              </Separator>
+                              <Label fx:id="año" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="108.0" text="2015">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="90.0" layoutY="10.0" prefHeight="34.0" prefWidth="196.0" style="-fx-border-radius: 5;" styleClass="cuadro">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="117.0" style="-fx-background-color: #2848B2;" text="Hora">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <Separator prefHeight="15.0" prefWidth="100.0">
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                    </Lighting>
+                                 </effect>
+                              </Separator>
+                              <Label fx:id="hora" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="108.0" text="01">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" style="-fx-background-color: black;" />
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="117.0" style="-fx-background-color: #2848B2;" text="Minuto">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <Separator prefHeight="15.0" prefWidth="100.0">
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                    </Lighting>
+                                 </effect>
+                              </Separator>
+                              <Label fx:id="minuto" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="108.0" text="11">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="99.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="420.0" prefWidth="544.0">
+         <children>
+            <VBox prefHeight="111.0" prefWidth="702.0">
+               <children>
+                  <Label fx:id="cliente" prefHeight="17.0" prefWidth="499.0" style="-fx-border-color: black; -fx-border-insets: 2;" text="Señor(es):">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="direccion" prefHeight="17.0" prefWidth="553.0" style="-fx-border-color: black; -fx-border-insets: 2;" text="Direccion:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="venta_detalle" prefHeight="339.0" prefWidth="267.0">
+                     <columns>
+                        <TableColumn fx:id="tpocicion" minWidth="9.0" prefWidth="21.0" text="#" />
+                        <TableColumn fx:id="tcantidad" prefWidth="40.0" text="Cant." />
+                        <TableColumn fx:id="tcodigo" prefWidth="59.0" text="Codigo" />
+                        <TableColumn fx:id="tnombre" prefWidth="231.0" text="Nombre" />
+                        <TableColumn fx:id="tprecio" prefWidth="73.0" text="Precio unit." />
+                        <TableColumn fx:id="tsubtotal" prefWidth="75.0" text="Sub Total" />
+                        <TableColumn fx:id="tdescuento" prefWidth="75.0" text="Descuento" />
+                        <TableColumn fx:id="ttotal" prefWidth="62.0" text="total" />
+                     </columns>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </TableView>
+                  <HBox layoutX="10.0" layoutY="366.0" prefHeight="68.0" prefWidth="497.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="410.0" text="SUB TOTAL :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="subtotal" alignment="CENTER" prefHeight="36.0" prefWidth="117.0" style="-fx-border-color: black;" text="S/. 45.00">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="68.0" prefWidth="497.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="410.0" text="DESCUENTO :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="descuento" alignment="CENTER" prefHeight="36.0" prefWidth="117.0" style="-fx-border-color: black;" text="S/. 45.00">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="382.0" prefHeight="68.0" prefWidth="497.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="410.0" text="TOTAL :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="total" alignment="CENTER" prefHeight="36.0" prefWidth="117.0" style="-fx-border-color: black;" text="S/. 45.00">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

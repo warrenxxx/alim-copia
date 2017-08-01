@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="600.0" prefWidth="216.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.admi.SideController">
+    <children>
+        <TitledPane fx:id="side" collapsible="false" text="OPCIONES">
+            <font>
+                <Font name="System Italic" size="17.0" />
+            </font>
+            <content>
+                <Accordion>
+                    <panes>
+                        <TitledPane animated="false" text="Almacen">
+                            <content>
+                                <VBox>
+                                    <children>
+                                        <Button fx:id="btnProductos" mnemonicParsing="false" onAction="#m_productos" prefHeight="17.0" prefWidth="117.0" text="Productos" />
+                                        <Button fx:id="btnCategoria" mnemonicParsing="false" onAction="#m_categoria" prefHeight="27.0" prefWidth="117.0" text="Categoria" />
+                                    </children>
+                                </VBox>
+                            </content>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                        </TitledPane>
+                  <TitledPane animated="false" expanded="false" text="Operaciones">
+                     <content>
+                        <VBox prefHeight="78.0" prefWidth="172.0">
+                           <children>
+                              <TitledPane animated="false" collapsible="false" expanded="false">
+                                 <graphic>
+                                    <Button fx:id="btnEntrada" mnemonicParsing="false" onAction="#compras" prefHeight="37.0" prefWidth="122.0">
+                                       <graphic>
+                                          <Label text="Entrada">
+                                             <graphic>
+                                                <ImageView fitHeight="63.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../recursos/shopping-basket-add256_24909_opt.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                       </graphic>
+                                    </Button>
+                                 </graphic>
+                              </TitledPane>
+                              <TitledPane animated="false" collapsible="false" expanded="false">
+                                 <graphic>
+                                    <Button fx:id="btnVentas" mnemonicParsing="false" onAction="#ventas" prefHeight="37.0" prefWidth="122.0">
+                                       <graphic>
+                                          <Label text="Ventas">
+                                             <graphic>
+                                                <ImageView fitHeight="63.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../recursos/GG_opt.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                       </graphic>
+                                    </Button>
+                                 </graphic>
+                              </TitledPane>
+                              <TitledPane animated="false" collapsible="false" expanded="false">
+                                 <graphic>
+                                    <Button fx:id="btnDesempacar" mnemonicParsing="false" onAction="#desempacar" prefHeight="37.0" prefWidth="122.0">
+                                       <graphic>
+                                          <Label prefHeight="32.0" prefWidth="112.0" text="Desempacar">
+                                             <graphic>
+                                                <ImageView fitHeight="63.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../recursos/uncompress_256_opt.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                       </graphic>
+                                    </Button>
+                                 </graphic>
+                              </TitledPane>
+                           </children>
+                        </VBox>
+                     </content>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane animated="false" expanded="false" layoutX="10.0" layoutY="41.0" text="Usuarios">
+                     <content>
+                        <VBox prefHeight="45.0" prefWidth="165.0">
+                           <children>
+                              <Button fx:id="btnUsuarios" mnemonicParsing="false" onAction="#usuarios" prefHeight="27.0" prefWidth="182.0" text="Editar Usuarios" />
+                           </children>
+                        </VBox>
+                     </content>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane animated="false" expanded="false" layoutX="10.0" layoutY="72.0" text="Reportes">
+                     <content>
+                        <VBox prefHeight="45.0" prefWidth="165.0">
+                           <children>
+                              <TitledPane animated="false" collapsible="false" expanded="false">
+                                 <graphic>
+                                    <Button fx:id="btnVentas_detallado" mnemonicParsing="false" onAction="#ventas_detallado" prefHeight="44.0" prefWidth="163.0">
+                                       <graphic>
+                                          <Label prefHeight="32.0" prefWidth="141.0" text="Ventas Detallado">
+                                             <graphic>
+                                                <ImageView fitHeight="63.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../recursos/sales_report_256_opt%20(1).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                       </graphic>
+                                    </Button>
+                                 </graphic>
+                              </TitledPane>
+                              <TitledPane animated="false" collapsible="false" expanded="false">
+                                 <graphic>
+                                    <Button fx:id="btnVentas_total" mnemonicParsing="false" onAction="#ventas_total" prefHeight="44.0" prefWidth="180.0">
+                                       <graphic>
+                                          <Label prefHeight="32.0" prefWidth="172.0" text="Ventas Total xSeccion">
+                                             <graphic>
+                                                <ImageView fitHeight="63.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../recursos/sales_report_256_opt%20(1).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                       </graphic>
+                                    </Button>
+                                 </graphic>
+                              </TitledPane>
+                              <TitledPane animated="false" collapsible="false" expanded="false">
+                                 <graphic>
+                                    <Button fx:id="btnVentas_fechas" mnemonicParsing="false" onAction="#ventas_total" prefHeight="44.0" prefWidth="180.0">
+                                       <graphic>
+                                          <Label prefHeight="32.0" prefWidth="172.0" text="Ventas Total Fechas">
+                                             <graphic>
+                                                <ImageView fitHeight="63.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../recursos/sales_report_256_opt%20(1).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                       </graphic>
+                                    </Button>
+                                 </graphic>
+                              </TitledPane>
+                              <TitledPane animated="false" collapsible="false" expanded="false">
+                                 <graphic>
+                                    <Button fx:id="btnSecciones" mnemonicParsing="false" onAction="#secciones" prefHeight="44.0" prefWidth="180.0">
+                                       <graphic>
+                                          <Label prefHeight="32.0" prefWidth="172.0" text="Secciones">
+                                             <graphic>
+                                                <ImageView fitHeight="63.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../recursos/sales_report_256_opt%20(1).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                       </graphic>
+                                    </Button>
+                                 </graphic>
+                              </TitledPane>
+                              <TitledPane animated="false" collapsible="false" expanded="false">
+                                 <graphic>
+                                    <Button fx:id="btnStockCategoria" mnemonicParsing="false" onAction="#stock_por_categoria" prefHeight="44.0" prefWidth="180.0">
+                                       <graphic>
+                                          <Label prefHeight="32.0" prefWidth="172.0" text="Stock por Categoria">
+                                             <graphic>
+                                                <ImageView fitHeight="63.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../recursos/sales_report_256_opt%20(1).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                       </graphic>
+                                    </Button>
+                                 </graphic>
+                              </TitledPane>
+                              <TitledPane animated="false" collapsible="false" expanded="false" layoutX="22.0" layoutY="238.0">
+                                 <graphic>
+                                    <Button fx:id="btnStockOrganizacion" mnemonicParsing="false" onAction="#stock_por_organizacion" prefHeight="44.0" prefWidth="180.0">
+                                       <graphic>
+                                          <Label prefHeight="32.0" prefWidth="172.0" text="Stock por Organizacion">
+                                             <graphic>
+                                                <ImageView fitHeight="63.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../recursos/sales_report_256_opt%20(1).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                       </graphic>
+                                    </Button>
+                                 </graphic>
+                              </TitledPane>
+                           </children></VBox>
+                     </content>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TitledPane>
+                    </panes>
+                </Accordion>
+            </content>
+        </TitledPane>
+    </children>
+</VBox>

@@ -1,0 +1,16 @@
+
+
+.mainFxmlClass {
+     
+   -fx-border-color:black;
+   -fx-border-radius:20;
+   -fx-border-radius:5;
+   -fx-border-width:3;    
+
+}
+.cuadro{
+    -fx-border-color:black;
+    -fx-border-radius:20;
+    -fx-border-insets:5;
+    -fx-border-width:3;    
+}

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.articulo.Insert_articuloController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="98.0" prefWidth="600.0" text="Insertar Nuevo Articulo" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="15.0" prefWidth="583.0" />
+      <HBox prefHeight="195.0" prefWidth="510.0">
+         <children>
+            <VBox prefHeight="125.0" prefWidth="211.0">
+               <children>
+                  <HBox prefHeight="24.0" prefWidth="175.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="105.0" text="CATEGORIA" />
+                        <ComboBox fx:id="categoria" prefWidth="152.0" promptText="Categoria" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="15.0" prefWidth="583.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="105.0" text="Nombre" />
+                        <TextField fx:id="nombre" prefHeight="23.0" prefWidth="152.0" promptText="Nombre" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="15.0" prefWidth="583.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="105.0" text="Codigo" />
+                        <TextField fx:id="codigo" prefHeight="23.0" prefWidth="152.0" promptText="Codigo" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="15.0" prefWidth="583.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="105.0" text="Descripcion" />
+                        <TextField fx:id="descripcion" prefHeight="23.0" prefWidth="152.0" promptText="Descripcion" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="24.0" prefWidth="175.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="67.0" text="Organizacion" />
+                        <Label fx:id="organizacion" prefHeight="33.0" prefWidth="61.0" style="-fx-border-color: #b3b3b5; -fx-border-radius: 2;" text="Estandar" />
+                        <Button id="but1" depthTest="DISABLE" mnemonicParsing="false" onAction="#buscar_organizacion" prefHeight="27.0" prefWidth="47.0" stylesheets="@../../css/warren.css" text="BUSCAR" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="103.0" prefHeight="24.0" prefWidth="175.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="67.0" text="Asignar" />
+                        <Button id="but1" depthTest="DISABLE" mnemonicParsing="false" onAction="#asignar" prefHeight="24.0" prefWidth="110.0" stylesheets="@../../css/warren.css" text="Editar" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="318.0">
+               <children>
+                  <HBox prefHeight="77.0" prefWidth="177.0">
+                     <children>
+                        <Label prefHeight="56.0" prefWidth="100.0" text="Unidades por Descipcion" textAlignment="CENTER" wrapText="true" />
+                        <TextField fx:id="unidades" prefHeight="56.0" prefWidth="116.0" promptText="Unidades " />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="15.0" prefWidth="583.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="100.0" text="Stock" />
+                        <TextField fx:id="stock" prefHeight="25.0" prefWidth="117.0" promptText="Stock" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="15.0" prefWidth="583.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="100.0" text="Costo" />
+                        <TextField fx:id="costo" prefHeight="25.0" prefWidth="118.0" promptText="Costo" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="15.0" prefWidth="583.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="100.0" text="Precio Dia" />
+                        <TextField fx:id="preciodia" prefHeight="25.0" prefWidth="91.0" promptText="Precio DIA" />
+                        <Label fx:id="lpreciodia" prefHeight="30.0" prefWidth="57.0">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="60.0" prefHeight="44.0" prefWidth="284.0">
+                     <children>
+                        <Label prefHeight="42.0" prefWidth="100.0" text="PORCENTAJE DE VARIACION DIA" wrapText="true" />
+                        <TextField fx:id="variaciondia" prefHeight="44.0" prefWidth="111.0" promptText="Variacion dia" />
+                        <Label prefHeight="51.0" prefWidth="29.0" text="\%" />
+                        <Label fx:id="lvariaciondia" prefHeight="49.0" prefWidth="47.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="60.0" prefHeight="15.0" prefWidth="583.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="100.0" text="Precio Noche" />
+                        <TextField fx:id="precionoche" prefHeight="25.0" prefWidth="91.0" promptText="Precio NOCHE" />
+                        <Label fx:id="lprecionoche" prefHeight="30.0" prefWidth="57.0">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="85.0" prefHeight="44.0" prefWidth="287.0">
+                     <children>
+                        <Label prefHeight="42.0" prefWidth="100.0" text="PORCENTAJE DE VARIACION NOCHE" wrapText="true" />
+                        <TextField fx:id="variacionnoche" prefHeight="44.0" prefWidth="107.0" promptText="Variacion noche" />
+                        <Label prefHeight="51.0" prefWidth="29.0" text="\%" />
+                        <Label fx:id="lvariacionnoche" prefHeight="49.0" prefWidth="47.0" />
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="58.0" prefWidth="557.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#insertar" prefHeight="58.0" prefWidth="135.0" text="INSERTAR">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#cancelar" prefHeight="56.0" prefWidth="138.0" text="CANCELAR">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="40.0" />
+   </padding>
+</VBox>

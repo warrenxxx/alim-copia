@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.persona.Insert_personaController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="98.0" prefWidth="600.0" text="Insertar Usuario" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="301.0" prefWidth="510.0">
+         <children>
+            <VBox prefHeight="225.0" prefWidth="236.0">
+               <children>
+                  <HBox prefHeight="28.0" prefWidth="531.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="120.0" text="Tipo de Documento" />
+                        <ComboBox fx:id="tipodocumento" prefWidth="150.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="36.0" prefWidth="233.0">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="107.0" text="Nurmero de Documento" wrapText="true" />
+                        <TextField fx:id="nrodocumento" prefHeight="25.0" prefWidth="135.0" promptText="Numero de Documento" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="15.0" prefWidth="583.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="120.0" text="Nombre" />
+                        <TextField fx:id="nombre" promptText="Nombre" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="15.0" prefWidth="583.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="120.0" text="Apellidos" />
+                        <TextField fx:id="apellidos" promptText="Apellidos" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="15.0" prefWidth="583.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="120.0" text="Fecha Nacimiento" />
+                        <DatePicker fx:id="fecha" prefHeight="25.0" prefWidth="150.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="15.0" prefWidth="583.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="120.0" text="Sexo" />
+                        <TextField fx:id="sexo" promptText="Sexo" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="15.0" prefWidth="583.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="120.0" text="Email" />
+                        <TextField fx:id="email" promptText="Email" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="233.0">
+                     <children>
+                        <Label prefHeight="28.0" prefWidth="118.0" text="Direccion" />
+                        <VBox prefHeight="35.0" prefWidth="150.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#nueva_direccion" prefHeight="25.0" prefWidth="185.0" text="Nueva Direccion" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="184.0" prefWidth="241.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <children>
+                  <HBox prefHeight="15.0" prefWidth="583.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="120.0" text="Usuario" />
+                        <TextField fx:id="usuario" promptText="Usuario" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="15.0" prefWidth="583.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="120.0" text="Password" />
+                        <PasswordField fx:id="password" promptText="Password" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="15.0" prefWidth="583.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="120.0" text="Tipo" />
+                        <TextField fx:id="tipo" promptText="Tipo" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="58.0" prefWidth="557.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#insertar" prefHeight="58.0" prefWidth="135.0" text="INSERTAR">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#cancelar" prefHeight="56.0" prefWidth="138.0" text="CANCELAR">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="40.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="alim.jnlp">
+  <information>
+    <title>alim</title>
+    <vendor>WARREN</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="alim.jar" size="333445" download="eager" />
+    <jar href="lib\commons-codec-1.10.jar" size="284184" download="eager" />
+    <jar href="lib\mongo-java-driver-3.4.2.jar" size="1673643" download="eager" />
+    <jar href="lib\mysql-connector-java-5.0.8-bin.jar" size="540852" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="alim" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="modelo.Fx2"  name="alim" />
+  <update check="always"/>
+</jnlp>
